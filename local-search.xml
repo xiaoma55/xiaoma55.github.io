@@ -35,11 +35,11 @@
     
     <tags>
       
+      <tag>激活</tag>
+      
       <tag>软件</tag>
       
       <tag>装系统</tag>
-      
-      <tag>激活</tag>
       
     </tags>
     
@@ -145,11 +145,11 @@
     
     <tags>
       
-      <tag>激活</tag>
-      
       <tag>JetBrains</tag>
       
       <tag>IDEA</tag>
+      
+      <tag>激活</tag>
       
     </tags>
     
@@ -193,7 +193,7 @@
     <link href="/2020/11/13/buildMyFirstHexoBlog/"/>
     <url>/2020/11/13/buildMyFirstHexoBlog/</url>
     
-    <content type="html"><![CDATA[<p>博客，是一种灵魂，记录灵感，记录生活，记录青春，记录我这苦难而又平凡的一生。</p><p>搭建个人博客的方式有很多，比如wordPress，hexo，hugo等等，我这里用的是hexo(我们公司架构师推荐的)</p><h2 id="博客搭建"><a href="#博客搭建" class="headerlink" title="博客搭建"></a>博客搭建</h2><p><a href="https://hexo.io/zh-cn/docs/index.html">hexo官网文档</a></p><blockquote><p>快速、简洁且高效的博客框架</p></blockquote><p>按着官网文档操作基本就OK了，就是安装git，node，hexo这三步骤。</p><p>安装好之后就是初始化了</p><pre><code class="hljs bash">$ hexo init &lt;folder&gt;$ <span class="hljs-built_in">cd</span> &lt;folder&gt;$ npm install</code></pre><p>完成后目录结构基本如下</p><pre><code class="hljs bash">.├── _config.yml        是很重要的配置文件，很多东西都在这配置(比如博客站点名，主题，发布仓库等等)├── package.json    ├── scaffolds          这个文件夹是模板文件夹，就是用命令新建笔记的时候的模板，下面说怎么用命令新建笔记|   ├── _draft.md      草稿模板，用这个模板写的笔记，在<span class="hljs-built_in">source</span>-&gt;draft中，发布后不会显示|   └── _post.md       文章模板，用这个模板写的笔记，在<span class="hljs-built_in">source</span>-&gt;post中，发布后不会显示|   └── _page.md       页面模板，很少用├── <span class="hljs-built_in">source</span>|   ├── _drafts|   └── _posts└── themes             主题，默认有一个主题，也可以自己从网上下载自己喜欢的主题，拷贝刀这里就可以``` 这个时候执行下面命令任一个，访问 http://localhost:4000/ 就可以看到自己的博客了。``` bash$ hexo s$ hexo server</code></pre><h2 id="写作"><a href="#写作" class="headerlink" title="写作"></a>写作</h2><pre><code class="hljs bash">$ hexo new [layout] &lt;title&gt;如:  hexo new post 我的第一个博客     hexo new draft 我的第一个草稿</code></pre><h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><p>上面的步骤在hexo官网都可以看到，我就不多写了，主要说一下部署这块需要注意点的东西</p><h3 id="仓库设置"><a href="#仓库设置" class="headerlink" title="仓库设置"></a>仓库设置</h3><p>注意deploy下面的repo填仓库的git地址：</p><pre><code class="hljs bash">deploy:  <span class="hljs-built_in">type</span>: git  repo: https://github.com/xiaoma55/xiaoma55.github.io.git  branch: master</code></pre><p>这个时候访问是通过 &lt;你的 GitHub 用户名&gt;.github.io 去访问的，因为仓库名设置成了github账户名</p><p>我们可以绑定一个自己的域名</p><h2 id="绑定域名"><a href="#绑定域名" class="headerlink" title="绑定域名"></a>绑定域名</h2><h3 id="购买域名"><a href="#购买域名" class="headerlink" title="购买域名"></a>购买域名</h3><p>自己去购买一个域名，完成认证</p><h3 id="域名解析"><a href="#域名解析" class="headerlink" title="域名解析"></a>域名解析</h3><p>接下下面这两个地址</p><p><img src="./buildMyFirstHexoBlog/jieXiYuMing.png" alt="域名解析"></p><h2 id="github仓库设置"><a href="#github仓库设置" class="headerlink" title="github仓库设置"></a>github仓库设置</h2><p><img src="./buildMyFirstHexoBlog/githubSetting.png" alt="仓库设置"></p><h2 id="大功告成"><a href="#大功告成" class="headerlink" title="大功告成"></a>大功告成</h2><p><img src="./buildMyFirstHexoBlog/boKeZhuYeTu.png" alt="大功告成"></p><h2 id="后续维护"><a href="#后续维护" class="headerlink" title="后续维护"></a>后续维护</h2><p>以后写了写笔记，执行下面命令就可以发布成功</p><pre><code class="hljs bash">$ hexo clean$ hexo g   $ hexo d</code></pre><p>要是本地预览</p><pre><code class="hljs bash">$ hexo s</code></pre><hr><h2 id="联系博主，加入【羊山丨交流社区】"><a href="#联系博主，加入【羊山丨交流社区】" class="headerlink" title="联系博主，加入【羊山丨交流社区】"></a>联系博主，加入【羊山丨交流社区】</h2><p><img src="./buildMyFirstHexoBlog/xiaomaWeChat.png" alt="联系博主"></p>]]></content>
+    <content type="html"><![CDATA[<p>博客，是一种灵魂，记录灵感，记录生活，记录青春，记录我这苦难而又平凡的一生。</p><p>搭建个人博客的方式有很多，比如wordPress，hexo，hugo等等，我这里用的是hexo(我们公司架构师推荐的)</p><h2 id="博客搭建"><a href="#博客搭建" class="headerlink" title="博客搭建"></a>博客搭建</h2><p><a href="https://hexo.io/zh-cn/docs/index.html">hexo官网文档</a></p><blockquote><p>快速、简洁且高效的博客框架</p></blockquote><p>按着官网文档操作基本就OK了，就是安装git，node，hexo这三步骤。</p><p>安装好之后就是初始化了</p><pre><code class="hljs bash">$ hexo init &lt;folder&gt;$ <span class="hljs-built_in">cd</span> &lt;folder&gt;$ npm install</code></pre><p>完成后目录结构基本如下</p><pre><code class="hljs bash">.├── _config.yml        是很重要的配置文件，很多东西都在这配置(比如博客站点名，主题，发布仓库等等)├── package.json    ├── scaffolds          这个文件夹是模板文件夹，就是用命令新建笔记的时候的模板，下面说怎么用命令新建笔记|   ├── _draft.md      草稿模板，用这个模板写的笔记，在<span class="hljs-built_in">source</span>-&gt;draft中，发布后不会显示|   └── _post.md       文章模板，用这个模板写的笔记，在<span class="hljs-built_in">source</span>-&gt;post中，发布后不会显示|   └── _page.md       页面模板，很少用├── <span class="hljs-built_in">source</span>|   ├── _drafts|   └── _posts└── themes             主题，默认有一个主题，也可以自己从网上下载自己喜欢的主题，拷贝刀这里就可以``` 这个时候执行下面命令任一个，访问 http://localhost:4000/ 就可以看到自己的博客了。``` bash$ hexo s$ hexo server</code></pre><h2 id="写作"><a href="#写作" class="headerlink" title="写作"></a>写作</h2><pre><code class="hljs bash">$ hexo new [layout] &lt;title&gt;如:  hexo new post 我的第一个博客     hexo new draft 我的第一个草稿</code></pre><h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><p>上面的步骤在hexo官网都可以看到，我就不多写了，主要说一下部署这块需要注意点的东西</p><h3 id="仓库设置"><a href="#仓库设置" class="headerlink" title="仓库设置"></a>仓库设置</h3><p>注意deploy下面的repo填仓库的git地址：</p><pre><code class="hljs bash">deploy:  <span class="hljs-built_in">type</span>: git  repo: https://github.com/xiaoma55/xiaoma55.github.io.git  branch: master</code></pre><p>这个时候访问是通过 &lt;你的 GitHub 用户名&gt;.github.io 去访问的，因为仓库名设置成了github账户名</p><p>我们可以绑定一个自己的域名</p><h2 id="绑定域名"><a href="#绑定域名" class="headerlink" title="绑定域名"></a>绑定域名</h2><h3 id="购买域名"><a href="#购买域名" class="headerlink" title="购买域名"></a>购买域名</h3><p>自己去购买一个域名，完成认证</p><h3 id="域名解析"><a href="#域名解析" class="headerlink" title="域名解析"></a>域名解析</h3><p>接下下面这两个地址</p><p><img src="/img/articleContent/jieXiYuMing.png" alt="域名解析"></p><h2 id="github仓库设置"><a href="#github仓库设置" class="headerlink" title="github仓库设置"></a>github仓库设置</h2><p><img src="/img/articleContent/githubSetting.png" alt="仓库设置"></p><h2 id="大功告成"><a href="#大功告成" class="headerlink" title="大功告成"></a>大功告成</h2><p><img src="/img/articleContent/boKeZhuYeTu.png" alt="大功告成"></p><h2 id="后续维护"><a href="#后续维护" class="headerlink" title="后续维护"></a>后续维护</h2><p>以后写了写笔记，执行下面命令就可以发布成功</p><pre><code class="hljs bash">$ hexo clean$ hexo g   $ hexo d</code></pre><p>要是本地预览</p><pre><code class="hljs bash">$ hexo s</code></pre><hr><h2 id="联系博主，加入【羊山丨交流社区】"><a href="#联系博主，加入【羊山丨交流社区】" class="headerlink" title="联系博主，加入【羊山丨交流社区】"></a>联系博主，加入【羊山丨交流社区】</h2><p><img src="/img/icon/wechatFindMe.png" alt="联系博主"></p>]]></content>
     
     
     <categories>
